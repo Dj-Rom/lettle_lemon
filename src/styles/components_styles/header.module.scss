@@ -1,0 +1,21 @@
+@import './../variables.module';
+
+header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li > a {
+      color: $color-dark-gray;
+      margin: 4px;
+      text-decoration: none;
+    }
+  }
+}
