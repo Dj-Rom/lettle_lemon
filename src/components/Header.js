@@ -5,7 +5,7 @@ import styles from './../styles/components_styles/header.module.scss'
 const Header = () => {
   return (
     <header>
-      <Logo className="header-logo" /> {/* Use the SVG component */}
+      <Logo className={styles.header_logo} />
       <Nav />
     </header>
   )

@@ -1,4 +1,9 @@
 @import '../variables.module';
+
 main {
-  color: $color-dark-gray;
+  position: relative;
+  margin-top: 1.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }

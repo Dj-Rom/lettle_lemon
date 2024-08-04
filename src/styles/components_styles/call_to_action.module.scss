@@ -1,0 +1,74 @@
+@import '../variables.module';
+@import '../mixins.module';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.article_call_to_action {
+  position: absolute;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  height: 19.6875rem;
+  flex-shrink: 0;
+  width: 100%;
+  background-color: $color-dark-green;
+}
+
+.section_call_to_action {
+  height: 25.625rem;
+  flex-shrink: 0;
+  h1 {
+    width: 20rem;
+    margin-top: 1.5rem;
+    @include h1-component-style;
+    cursor: pointer;
+  }
+  h1:hover {
+    color: rgb(237, 237, 151);
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 31px #fff,
+      0 0 55px rgb(255, 226, 4), 0 0 91px rgb(255, 226, 4),
+      0 0 100px rgb(255, 226, 4), 0 0 122px rgb(255, 226, 4),
+      0 0 140px rgb(255, 226, 4);
+  }
+  h4 {
+    margin-top: -1rem;
+    @include h4-component-style;
+  }
+  width: 22rem;
+  p {
+    margin-top: 0.5rem;
+    @include p-component-style;
+    display: block;
+    overflow-y: auto;
+  }
+
+  .reserve_a_table {
+    cursor: pointer;
+    margin-top: 1rem;
+
+    @include button-component-style;
+  }
+  .reserve_a_table:hover {
+    transition: 0.1s;
+
+    background-color: #dab912;
+    box-shadow: #dab912 0.03px 0.09px 0.8px 0.2px;
+  }
+}
+.rest_food_figure {
+  width: 50%;
+  position: relative;
+  height: 14rem;
+  width: 32rem;
+
+  .rest_food_img {
+    margin-top: 1.5rem;
+    position: absolute;
+    right: 0px;
+    width: 22.5rem;
+    height: 23.625rem;
+    border-radius: $border-radius;
+  }
+}

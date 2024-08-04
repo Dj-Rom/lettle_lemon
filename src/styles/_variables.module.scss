@@ -4,3 +4,6 @@ $color-orange: #ee9972;
 $color-light-beige: #fbdabb;
 $color-light-gray: #edefee;
 $color-dark-gray: #333333;
+$border-radius: 1rem;
+$blend-percentage: 35%;
+$resulting-color: mix(rgb(0, 0, 0), $color-yellow, $blend-percentage);
