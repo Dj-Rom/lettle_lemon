@@ -8,7 +8,7 @@
   flex-shrink: 0;
   width: 100%;
 
-  .groupTittleAndBtn {
+  .group_tittle_and_btn {
     position: absolute;
     display: flex;
     margin-top: 1.5rem;
@@ -33,7 +33,7 @@
     }
   }
 
-  .listCards {
+  .list_cards {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -50,7 +50,7 @@
       align-content: stretch;
       background-color: $color-light-gray;
       width: 17rem;
-      .imgCard {
+      .img_card {
         position: absolute;
         height: 14.25rem;
         width: 17rem;
@@ -59,7 +59,7 @@
         border-top-left-radius: $border-radius;
         border-top-right-radius: $border-radius;
       }
-      .headerCard {
+      .header_card {
         position: absolute;
         margin: 16.5rem 1.5rem 0rem 1.5rem;
         display: flex;
@@ -99,7 +99,7 @@
         display: flex;
         align-items: center;
         width: 14rem;
-        .orderButton {
+        .order_button {
           display: block;
           position: absolute;
           color: $color-dark-gray;
@@ -112,6 +112,7 @@
           line-height: 1.2;
           cursor: pointer;
         }
+
         .delivery_logo {
           display: inline-block;
           position: absolute;
@@ -124,4 +125,10 @@
       }
     }
   }
+}
+
+.list_cards li:hover {
+  transform: rotateX(4deg);
+  transition: 0.5s;
+  box-shadow: 0 1px 10px 2px rgba(164, 146, 6, 0.5);
 }

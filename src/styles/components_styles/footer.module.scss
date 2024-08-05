@@ -6,6 +6,7 @@
   top: 182rem;
   width: 100%;
   height: 13rem;
+  padding-left: 4rem;
   justify-content: center;
   align-items: flex-start;
   color: $color-light-gray;
@@ -36,7 +37,7 @@ li {
   a:hover {
     transition: 0.1s;
     color: $color-yellow;
-    font-weight: 800;
+
     svg {
       transition: 0.33s;
       width: 1.3em;

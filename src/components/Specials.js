@@ -31,31 +31,31 @@ const data = [
 const Specials = () => {
   return (
     <section className={styles.specials}>
-      <div className={styles.groupTittleAndBtn}>
+      <div className={styles.group_tittle_and_btn}>
         <h1>This Week's Specials!</h1>
-        <button className={styles.menuButton}>Online Menu</button>
+        <button className={styles.menu_button}>Online Menu</button>
       </div>
 
-      <ul className={styles.listCards}>
+      <ul className={styles.list_cards}>
         {data.map((card) => (
           <li key={card.id} className={styles.card}>
             <figure>
               <img
-                className={styles.imgCard}
+                className={styles.img_card}
                 src={card.image}
                 alt={card.title}
               />
             </figure>
-            <header className={styles.headerCard}>
+            <header className={styles.header_card}>
               <h3>{card.title}</h3>
               <span>{card.price}</span>
             </header>
             <main>
               <p>{card.text}</p>
             </main>
-            <footer>
+            <footer className={styles.footer_specials}>
               <a
-                className={styles.orderButton}
+                className={styles.order_button}
                 role="button to order a delivery"
               >
                 Order a Delivery

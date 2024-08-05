@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/chicago.module.scss'
+import styles from '../styles/components_styles/chicago.module.scss'
 const Chicago = () => {
   return (
     <section className={styles.our_story}>
@@ -41,10 +41,14 @@ const Chicago = () => {
       </div>
       <figure className={styles.our_story_photos}>
         <img
+          src={require('../assets/icons/Mario and Adrian A 1.png')}
+          alt="photo with Mario and Adrian"
           role="photo Mario and Adrian"
           className={styles.our_story_photos_1}
         />
         <img
+          src={require('../assets/icons/Mario and Adrian b 1.png')}
+          alt="photo with Mario and Adrian"
           role="photo Mario and Adrian"
           className={styles.our_story_photos_2}
         />

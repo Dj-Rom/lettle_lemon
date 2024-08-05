@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImQuotesLeft } from 'react-icons/im'
 
-import styles from '../styles/components_styles/customersSay.module.scss'
+import styles from '../styles/components_styles/customers_say.module.scss'
 import RatingReview from './RatingReview'
 const CustomersSay = () => {
   const ratings = [
